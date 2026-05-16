@@ -1,0 +1,145 @@
+/* Google Font Import */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap');
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    background-color: #f4f7f6;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    padding: 20px;
+}
+
+.container {
+    width: 100%;
+    max-width: 1000px;
+}
+
+h2 {
+    text-align: center;
+    font-size: 24px;
+    font-weight: 600;
+   
+    margin-bottom: 20px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    color: #92400e;
+}
+
+/* Table Wrapper for Responsiveness */
+.table-wrapper {
+    box-shadow: 0px 35px 50px rgba( 0, 0, 0, 0.08 );
+    border-radius: 8px;
+    overflow: hidden;
+    background: #ffffff;
+   
+}
+
+.fl-table {
+    width: 100%;
+    border-collapse: collapse;
+ 
+    
+}
+
+.fl-table th {
+    text-align: left;
+    padding: 18px;
+    background: #4F46E5; /* Nice Modern Purple/Blue */
+    color: #ffffff;
+    font-size: 14px;
+    font-weight: 500;
+    letter-spacing: 0.5px;
+    
+
+}
+
+.fl-table td {
+    padding: 15px 18px;
+    font-size: 14px;
+    color: #4a5568;
+    border-bottom: 1px solid #edf2f7;
+    
+}
+
+/* Alternate Row Coloring */
+.fl-table tbody tr:nth-child(even) {
+    background: #f8fafc;
+}
+
+/* Hover Effect */
+.fl-table tbody tr:hover {
+    background-color: #f1f5f9;
+    transition: background-color 0.2s ease;
+    cursor: pointer;
+}
+
+/* Status Badge Styling (Optional) */
+.badge {
+    padding: 4px 8px;
+    border-radius: 50px;
+    font-size: 12px;
+    font-weight: 500;
+}
+.badge.active { background: #def7ec; color: #03543f; }
+.badge.pending { background: #fef3c7; color: #92400e; }
+
+.loading {
+    text-align: center;
+    font-weight: 500;
+    color: #718096;
+    padding: 30px !important;
+}
+
+/* Search Bar Styling */
+.search-container {
+    display: flex;
+    gap: 10px;
+    margin-bottom: 20px;
+    justify-content: flex-end; /* Search bar ko right side par align karne ke liye */
+}
+
+#search-input {
+    padding: 10px 15px;
+    width: 100%;
+    max-width: 300px;
+    border: 2px solid #e2e8f0;
+    border-radius: 6px;
+    font-size: 14px;
+    outline: none;
+    transition: border-color 0.3s ease;
+}
+
+#search-input:focus {
+    border-color: #4F46E5; /* Focus karne par border purple ho jayega */
+}
+
+#search-btn {
+    padding: 10px 20px;
+    background-color: #4F46E5;
+    color: white;
+    border: none;
+    border-radius: 6px;
+    font-size: 14px;
+    font-weight: 500;
+    cursor: pointer;
+    transition: background 0.2s ease;
+}
+
+#search-btn:hover {
+    background-color: #4338ca;
+}
+
+/* Responsive Layout for Mobile */
+@media (max-width: 767px) {
+    .table-wrapper {
+        overflow-x: auto;
+    }
+}
